@@ -1,23 +1,31 @@
 -- Gui to Lua
 -- Version: 3.2
 
--- Made by aaa000798 (DC) V2
-
 -- Instances:
 
 local MobileSwordCheats = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local Tank = Instance.new("TextButton")
-local AimBot = Instance.new("TextButton")
+local OpenClose = Instance.new("TextButton")
+local Frame = Instance.new("ImageLabel")
 local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Page1Frame = Instance.new("Frame")
+local AimBot = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local HitboxAura = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local JumpBot = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local LungeBot = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Tank = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local VisualHitbox = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 local Title = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
-local Hitbox = Instance.new("TextLabel")
-local VisualHitbox = Instance.new("TextButton")
-local HitboxAura = Instance.new("TextButton")
-local JumpBot = Instance.new("TextButton")
-local LungeBot = Instance.new("TextButton")
-local OpenClose = Instance.new("TextButton")
+local Page1Button = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 
 --Properties:
 
@@ -25,128 +33,6 @@ MobileSwordCheats.Name = "MobileSwordCheats"
 MobileSwordCheats.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MobileSwordCheats.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MobileSwordCheats.ResetOnSpawn = false
-
-Frame.Parent = MobileSwordCheats
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.716112077, 0, 0.093564406, 0)
-Frame.Size = UDim2.new(0, 136, 0, 318)
-Frame.Visible = false
-
-Tank.Name = "Tank"
-Tank.Parent = Frame
-Tank.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Tank.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Tank.BorderSizePixel = 0
-Tank.Position = UDim2.new(0.125, 0, 0.0897842497, 0)
-Tank.Size = UDim2.new(0, 101, 0, 36)
-Tank.Font = Enum.Font.JosefinSans
-Tank.Text = "Tank"
-Tank.TextColor3 = Color3.fromRGB(255, 255, 255)
-Tank.TextSize = 20.000
-
-AimBot.Name = "AimBot"
-AimBot.Parent = Frame
-AimBot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AimBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AimBot.BorderSizePixel = 0
-AimBot.Position = UDim2.new(0.125, 0, 0.227558255, 0)
-AimBot.Size = UDim2.new(0, 101, 0, 36)
-AimBot.Font = Enum.Font.JosefinSans
-AimBot.Text = "AimBot"
-AimBot.TextColor3 = Color3.fromRGB(255, 255, 255)
-AimBot.TextSize = 20.000
-
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0, 0, 0.631647706, 0)
-Frame_2.Size = UDim2.new(0, 136, 0, 11)
-
-Title.Name = "Title"
-Title.Parent = Frame
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Title.BorderSizePixel = 0
-Title.Size = UDim2.new(0, 136, 0, 29)
-Title.Font = Enum.Font.JosefinSans
-Title.Text = "Mobile SF Cheat"
-Title.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title.TextSize = 14.000
-
-Credits.Name = "Credits"
-Credits.Parent = Frame
-Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Credits.BorderSizePixel = 0
-Credits.Position = UDim2.new(0, 0, 0.908805013, 0)
-Credits.Size = UDim2.new(0, 136, 0, 29)
-Credits.Font = Enum.Font.JosefinSans
-Credits.Text = "By aaa000798 (DC)"
-Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
-Credits.TextSize = 10.000
-
-Hitbox.Name = "Hitbox"
-Hitbox.Parent = Frame
-Hitbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Hitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Hitbox.BorderSizePixel = 0
-Hitbox.Position = UDim2.new(0, 0, 0.666666627, 0)
-Hitbox.Size = UDim2.new(0, 136, 0, 29)
-Hitbox.Font = Enum.Font.JosefinSans
-Hitbox.Text = "Hitbox"
-Hitbox.TextColor3 = Color3.fromRGB(0, 0, 0)
-Hitbox.TextSize = 14.000
-
-VisualHitbox.Name = "VisualHitbox"
-VisualHitbox.Parent = Frame
-VisualHitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-VisualHitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-VisualHitbox.BorderSizePixel = 0
-VisualHitbox.Position = UDim2.new(0.0661764741, 0, 0.831331849, 0)
-VisualHitbox.Size = UDim2.new(0, 117, 0, 24)
-VisualHitbox.Font = Enum.Font.JosefinSans
-VisualHitbox.Text = "Visuals"
-VisualHitbox.TextColor3 = Color3.fromRGB(255, 255, 255)
-VisualHitbox.TextSize = 20.000
-
-HitboxAura.Name = "HitboxAura"
-HitboxAura.Parent = Frame
-HitboxAura.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-HitboxAura.BorderColor3 = Color3.fromRGB(0, 0, 0)
-HitboxAura.BorderSizePixel = 0
-HitboxAura.Position = UDim2.new(0.0661764741, 0, 0.73699218, 0)
-HitboxAura.Size = UDim2.new(0, 117, 0, 24)
-HitboxAura.Font = Enum.Font.JosefinSans
-HitboxAura.Text = "HitBoxAura"
-HitboxAura.TextColor3 = Color3.fromRGB(255, 255, 255)
-HitboxAura.TextSize = 20.000
-
-JumpBot.Name = "JumpBot"
-JumpBot.Parent = Frame
-JumpBot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-JumpBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-JumpBot.BorderSizePixel = 0
-JumpBot.Position = UDim2.new(0.125, 0, 0.362778395, 0)
-JumpBot.Size = UDim2.new(0, 101, 0, 36)
-JumpBot.Font = Enum.Font.JosefinSans
-JumpBot.Text = "JumpBot"
-JumpBot.TextColor3 = Color3.fromRGB(255, 255, 255)
-JumpBot.TextSize = 20.000
-
-LungeBot.Name = "LungeBot"
-LungeBot.Parent = Frame
-LungeBot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-LungeBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LungeBot.BorderSizePixel = 0
-LungeBot.Position = UDim2.new(0.125, 0, 0.501143157, 0)
-LungeBot.Size = UDim2.new(0, 101, 0, 36)
-LungeBot.Font = Enum.Font.JosefinSans
-LungeBot.Text = "LungeBot"
-LungeBot.TextColor3 = Color3.fromRGB(255, 255, 255)
-LungeBot.TextSize = 20.000
 
 OpenClose.Name = "Open/Close"
 OpenClose.Parent = MobileSwordCheats
@@ -157,73 +43,203 @@ OpenClose.BorderSizePixel = 0
 OpenClose.Position = UDim2.new(0.766040921, 0, -0.00116011559, 0)
 OpenClose.Size = UDim2.new(0, 64, 0, 25)
 OpenClose.Font = Enum.Font.JosefinSans
-OpenClose.Text = "Open"
+OpenClose.Text = ""
 OpenClose.TextColor3 = Color3.fromRGB(255, 255, 255)
 OpenClose.TextSize = 15.000
 
+Frame.Name = "Frame"
+Frame.Parent = MobileSwordCheats
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.346459478, 0, 0.31409362, 0)
+Frame.Size = UDim2.new(0.353471339, 0, 0.425192982, 0)
+Frame.Visible = false
+Frame.Image = "rbxassetid://115901399"
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.245989308, 0, 0, 0)
+Frame_2.Size = UDim2.new(0.00267379684, 0, 1, 0)
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-0.0026733072, 0, 0.120942578, 0)
+Frame_3.Size = UDim2.new(0.248663098, 0, -0.00462962966, 0)
+
+Frame_4.Parent = Frame
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(-0.0026733072, 0, 0.847794414, 0)
+Frame_4.Size = UDim2.new(0.248663098, 0, -0.00462962966, 0)
+
+Page1Frame.Name = "Page1Frame"
+Page1Frame.Parent = Frame
+Page1Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page1Frame.BackgroundTransparency = 0.900
+Page1Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Page1Frame.BorderSizePixel = 0
+Page1Frame.Position = UDim2.new(0.28342247, 0, 0.0648148134, 0)
+Page1Frame.Size = UDim2.new(0.679144382, 0, 0.865740716, 0)
+
+AimBot.Name = "AimBot"
+AimBot.Parent = Page1Frame
+AimBot.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AimBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimBot.BorderSizePixel = 0
+AimBot.Position = UDim2.new(0.0405156426, 0, 0.0636360124, 0)
+AimBot.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
+AimBot.Font = Enum.Font.JosefinSans
+AimBot.Text = "AimBot"
+AimBot.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimBot.TextSize = 15.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = AimBot
+
+HitboxAura.Name = "HitboxAura"
+HitboxAura.Parent = Page1Frame
+HitboxAura.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HitboxAura.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HitboxAura.BorderSizePixel = 0
+HitboxAura.Position = UDim2.new(0.0299689174, 0, 0.710307002, 0)
+HitboxAura.Size = UDim2.new(0.289660484, 0, 0.0914915055, 0)
+HitboxAura.Font = Enum.Font.JosefinSans
+HitboxAura.Text = "HitBoxAura"
+HitboxAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+HitboxAura.TextSize = 15.000
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = HitboxAura
+
+JumpBot.Name = "JumpBot"
+JumpBot.Parent = Page1Frame
+JumpBot.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+JumpBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpBot.BorderSizePixel = 0
+JumpBot.Position = UDim2.new(0.330176145, 0, 0.0616188385, 0)
+JumpBot.Size = UDim2.new(0.250435621, 0, 0.137237266, 0)
+JumpBot.Font = Enum.Font.JosefinSans
+JumpBot.Text = "JumpBot"
+JumpBot.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpBot.TextSize = 15.000
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = JumpBot
+
+LungeBot.Name = "LungeBot"
+LungeBot.Parent = Page1Frame
+LungeBot.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+LungeBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LungeBot.BorderSizePixel = 0
+LungeBot.Position = UDim2.new(0.595698237, 0, 0.0627463832, 0)
+LungeBot.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
+LungeBot.Font = Enum.Font.JosefinSans
+LungeBot.Text = "LungeBot"
+LungeBot.TextColor3 = Color3.fromRGB(255, 255, 255)
+LungeBot.TextSize = 15.000
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = LungeBot
+
+Tank.Name = "Tank"
+Tank.Parent = Page1Frame
+Tank.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Tank.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tank.BorderSizePixel = 0
+Tank.Position = UDim2.new(0.0405156426, 0, 0.234645814, 0)
+Tank.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
+Tank.Font = Enum.Font.JosefinSans
+Tank.Text = "Tank"
+Tank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tank.TextSize = 15.000
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Tank
+
+VisualHitbox.Name = "VisualHitbox"
+VisualHitbox.Parent = Page1Frame
+VisualHitbox.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+VisualHitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisualHitbox.BorderSizePixel = 0
+VisualHitbox.Position = UDim2.new(0.0299689174, 0, 0.827520072, 0)
+VisualHitbox.Size = UDim2.new(0.289660484, 0, 0.0762429237, 0)
+VisualHitbox.Font = Enum.Font.JosefinSans
+VisualHitbox.Text = "Visuals"
+VisualHitbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisualHitbox.TextSize = 15.000
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = VisualHitbox
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(-0.0573771596, 0, -0.00255102944, 0)
+Title.Size = UDim2.new(0, 200, 0, 50)
+Title.Font = Enum.Font.JosefinSans
+Title.Text = "Mobile SF Cheat"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 10.000
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(-0.0573771596, 0, 0.853509963, 0)
+Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Font = Enum.Font.JosefinSans
+Credits.Text = "By aaa000798 (dc)"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 10.000
+
+Page1Button.Name = "Page1Button"
+Page1Button.Parent = Frame
+Page1Button.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Page1Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Page1Button.BorderSizePixel = 0
+Page1Button.Position = UDim2.new(0.0409836024, 0, 0.165016502, 0)
+Page1Button.Size = UDim2.new(0.157786861, 0, 0.105610564, 0)
+Page1Button.Font = Enum.Font.JosefinSans
+Page1Button.Text = "Page 1"
+Page1Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Page1Button.TextSize = 12.000
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = Page1Button
+
 -- Scripts:
 
-local function RGCUJS_fake_script() -- Tank.TankScript 
-	local script = Instance.new('LocalScript', Tank)
+local function YGIKBZW_fake_script() -- OpenClose.Open/Close Script 
+	local script = Instance.new('LocalScript', OpenClose)
 
-	local Toggle = false
+	local Button = script.Parent
+	local MainFrame = script.Parent.Parent.Frame
+	local isOpened = false
 	
-	local PlayerService = game:GetService("Players")
-	local Run = game:GetService("RunService")
-	local UIS = game:GetService("UserInputService")
-	local StarterGui = game:GetService("StarterGui")
-	local TankButton = script.Parent
-	
-	local LocalPlayer = PlayerService.LocalPlayer
-	
-	local function Notify(Info)
-		StarterGui:SetCore("SendNotification", {Title = "Tank", Text = Info})
-	end
-	
-	TankButton.Activated:Connect(function()
-		Toggle = not Toggle
-		Notify(tostring(Toggle))
-	end)
-	
-	
-	while Run.Stepped:Wait() do
-		if not Toggle then continue end
-	
-		for i, Character in next, workspace:GetChildren() do
-			if LocalPlayer.Character == Character then continue end
-	
-			if Character:IsA("Model") and Character:FindFirstChildOfClass("Humanoid") then
-				task.spawn(function()
-					Run.Stepped:Wait()
-	
-					local Humanoid = Character:FindFirstChildOfClass("Humanoid") 
-	
-					local RightArm = Character and Character:FindFirstChild("Right Arm")
-					local RightGrip = RightArm and RightArm:FindFirstChild("RightGrip")
-	
-					local Health = Humanoid and Humanoid.Health
-					local Tool = RightGrip and RightGrip.Part1 and RightGrip.Part1.Parent
-	
-					if (RightArm.Position - LocalPlayer.Character.Torso.Position).Magnitude < 7 and Tool and Health < 101 and RightArm.Transparency < 0.5 then
-						local Player = PlayerService:FindFirstChild(Character.Name)
-	
-						Tool.Parent = Player.Backpack
-						RightGrip.Parent = nil
-	
-						Run.RenderStepped:Wait()
-	
-						if Tool.Parent then
-							Tool.Parent = Character
-							RightGrip.Parent = RightArm 
-						end
-					end
-				end) 
-			end
+	Button.Activated:Connect(function()
+		isOpened = not isOpened
+		
+		if isOpened then
+			MainFrame.Visible = true
+			
+		else
+			MainFrame.Visible = false
 		end
-	end
+	end)
 end
-coroutine.wrap(RGCUJS_fake_script)()
-local function XHFPQ_fake_script() -- AimBot.AimbotScript 
+coroutine.wrap(YGIKBZW_fake_script)()
+local function GSWDP_fake_script() -- AimBot.AimbotScript 
 	local script = Instance.new('LocalScript', AimBot)
 
 	local RunService = game:GetService("RunService")
@@ -284,98 +300,8 @@ local function XHFPQ_fake_script() -- AimBot.AimbotScript
 		end
 	end)
 end
-coroutine.wrap(XHFPQ_fake_script)()
-local function AXZV_fake_script() -- VisualHitbox.VisualScript 
-	local script = Instance.new('LocalScript', VisualHitbox)
-
-	local RunService = game:GetService("RunService")
-	local StarterGui = game:GetService("StarterGui")
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local VisualButton = script.Parent
-	
-	local Toggled = false
-	
-	local function Notify(Info)
-		StarterGui:SetCore("SendNotification", {Title = "Visuals", Text = Info})
-	end
-	
-	VisualButton.Activated:Connect(function()
-		Toggled = not Toggled
-		Notify(tostring(Toggled))
-	end)
-	
-	
-	RunService.Stepped:Connect(function()
-		if Toggled then
-			
-			local player = Players.LocalPlayer
-			
-			for _, v in pairs(Players:GetPlayers()) do
-				if v.Name ~= player.Name then
-					pcall(function()
-						local Vchar = v.Character
-						local Vhrp = Vchar:FindFirstChild("HumanoidRootPart")
-						Vhrp.BrickColor = BrickColor.new("Black")
-						Vhrp.Transparency = 0.7
-					end)
-				end
-			end
-		else
-			for _, v in pairs(Players:GetPlayers()) do
-				if v.Name ~= player.Name then
-					pcall(function()
-						local Vchar = v.Character
-						local Vhrp = Vchar:FindFirstChild("HumanoidRootPart")
-						Vhrp.BrickColor = BrickColor.new("Medium stone grey")
-						Vhrp.Transparency = 1
-					end)
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(AXZV_fake_script)()
-local function CSTSGL_fake_script() -- Frame.Draggable 
-	local script = Instance.new('LocalScript', Frame)
-
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end
-coroutine.wrap(CSTSGL_fake_script)()
-local function BFQZVX_fake_script() -- HitboxAura.HitboxAuraScript 
+coroutine.wrap(GSWDP_fake_script)()
+local function BCXYOF_fake_script() -- HitboxAura.HitboxAuraScript 
 	local script = Instance.new('LocalScript', HitboxAura)
 
 	local RunService = game:GetService("RunService")
@@ -436,8 +362,8 @@ local function BFQZVX_fake_script() -- HitboxAura.HitboxAuraScript
 		end
 	end)
 end
-coroutine.wrap(BFQZVX_fake_script)()
-local function RRTYZTL_fake_script() -- JumpBot.JumpBotScript 
+coroutine.wrap(BCXYOF_fake_script)()
+local function IRMJGH_fake_script() -- JumpBot.JumpBotScript 
 	local script = Instance.new('LocalScript', JumpBot)
 
 	local RunService = game:GetService("RunService")
@@ -483,8 +409,8 @@ local function RRTYZTL_fake_script() -- JumpBot.JumpBotScript
 		end
 	end)
 end
-coroutine.wrap(RRTYZTL_fake_script)()
-local function HXVOIJ_fake_script() -- LungeBot.LungeBotScript 
+coroutine.wrap(IRMJGH_fake_script)()
+local function QFSX_fake_script() -- LungeBot.LungeBotScript 
 	local script = Instance.new('LocalScript', LungeBot)
 
 	local RunService = game:GetService("RunService")
@@ -531,25 +457,165 @@ local function HXVOIJ_fake_script() -- LungeBot.LungeBotScript
 		end
 	end)
 end
-coroutine.wrap(HXVOIJ_fake_script)()
-local function VFTWPV_fake_script() -- OpenClose.Open/Close Script 
-	local script = Instance.new('LocalScript', OpenClose)
+coroutine.wrap(QFSX_fake_script)()
+local function SJGC_fake_script() -- Tank.TankScript 
+	local script = Instance.new('LocalScript', Tank)
 
-	local Button = script.Parent
-	local MainFrame = script.Parent.Parent.Frame
-	local isOpened = false
+	local Toggle = false
 	
-	Button.Activated:Connect(function()
-		isOpened = not isOpened
-		
-		if isOpened then
-			Button.Text = "Close"
-			MainFrame.Visible = true
+	local PlayerService = game:GetService("Players")
+	local Run = game:GetService("RunService")
+	local UIS = game:GetService("UserInputService")
+	local StarterGui = game:GetService("StarterGui")
+	local TankButton = script.Parent
+	
+	local LocalPlayer = PlayerService.LocalPlayer
+	
+	local function Notify(Info)
+		StarterGui:SetCore("SendNotification", {Title = "Tank", Text = Info})
+	end
+	
+	TankButton.Activated:Connect(function()
+		Toggle = not Toggle
+		Notify(tostring(Toggle))
+	end)
+	
+	
+	while Run.Stepped:Wait() do
+		if not Toggle then continue end
+	
+		for i, Character in next, workspace:GetChildren() do
+			if LocalPlayer.Character == Character then continue end
+	
+			if Character:IsA("Model") and Character:FindFirstChildOfClass("Humanoid") then
+				task.spawn(function()
+					Run.Stepped:Wait()
+	
+					local Humanoid = Character:FindFirstChildOfClass("Humanoid") 
+	
+					local RightArm = Character and Character:FindFirstChild("Right Arm")
+					local RightGrip = RightArm and RightArm:FindFirstChild("RightGrip")
+	
+					local Health = Humanoid and Humanoid.Health
+					local Tool = RightGrip and RightGrip.Part1 and RightGrip.Part1.Parent
+	
+					if (RightArm.Position - LocalPlayer.Character.Torso.Position).Magnitude < 7 and Tool and Health < 101 and RightArm.Transparency < 0.5 then
+						local Player = PlayerService:FindFirstChild(Character.Name)
+	
+						Tool.Parent = Player.Backpack
+						RightGrip.Parent = nil
+	
+						Run.RenderStepped:Wait()
+	
+						if Tool.Parent then
+							Tool.Parent = Character
+							RightGrip.Parent = RightArm 
+						end
+					end
+				end) 
+			end
+		end
+	end
+end
+coroutine.wrap(SJGC_fake_script)()
+local function URCDXU_fake_script() -- VisualHitbox.VisualScript 
+	local script = Instance.new('LocalScript', VisualHitbox)
+
+	local RunService = game:GetService("RunService")
+	local StarterGui = game:GetService("StarterGui")
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local VisualButton = script.Parent
+	
+	local Toggled = false
+	
+	local function Notify(Info)
+		StarterGui:SetCore("SendNotification", {Title = "Visuals", Text = Info})
+	end
+	
+	VisualButton.Activated:Connect(function()
+		Toggled = not Toggled
+		Notify(tostring(Toggled))
+	end)
+	
+	
+	RunService.Stepped:Connect(function()
+		if Toggled then
 			
+			local player = Players.LocalPlayer
+			
+			for _, v in pairs(Players:GetPlayers()) do
+				if v.Name ~= player.Name then
+					pcall(function()
+						local Vchar = v.Character
+						local Vhrp = Vchar:FindFirstChild("HumanoidRootPart")
+						Vhrp.BrickColor = BrickColor.new("Black")
+						Vhrp.Transparency = 0.7
+					end)
+				end
+			end
 		else
-			Button.Text = "Open"
-			MainFrame.Visible = false
+			for _, v in pairs(Players:GetPlayers()) do
+				if v.Name ~= player.Name then
+					pcall(function()
+						local Vchar = v.Character
+						local Vhrp = Vchar:FindFirstChild("HumanoidRootPart")
+						Vhrp.BrickColor = BrickColor.new("Medium stone grey")
+						Vhrp.Transparency = 1
+					end)
+				end
+			end
 		end
 	end)
 end
-coroutine.wrap(VFTWPV_fake_script)()
+coroutine.wrap(URCDXU_fake_script)()
+local function YUUI_fake_script() -- Page1Button.Page1Script 
+	local script = Instance.new('LocalScript', Page1Button)
+
+	local Button = script.Parent
+	local Frame = Button.Parent.Page1Frame
+	
+	Button.Activated:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+end
+coroutine.wrap(YUUI_fake_script)()
+local function NSYNBU_fake_script() -- Frame.Draggable 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(NSYNBU_fake_script)()

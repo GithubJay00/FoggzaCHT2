@@ -315,7 +315,7 @@ local function GNQXRUO_fake_script() -- AimBot.AimbotScript
 	
 	local function getClosestPlayer()
 		local closestPlayer = nil
-		local Radius = 10
+		local Radius = 20
 	
 		for _, v in Players:GetPlayers() do
 			if v ~= player and v.Character then
@@ -495,7 +495,7 @@ local function NUCQEE_fake_script() -- LungeBot.LungeBotScript
 						
 						local vhrp = v.Character:FindFirstChild("HumanoidRootPart")
 	
-						local Radius = 8
+						local Radius = 10
 						local Distance = (vhrp.Position - hrp.Position).Magnitude
 						if Distance <= Radius then
 	

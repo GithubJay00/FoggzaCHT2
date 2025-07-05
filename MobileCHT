@@ -12,20 +12,29 @@ local Frame_4 = Instance.new("Frame")
 local Page1Frame = Instance.new("Frame")
 local AimBot = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local HitboxAura = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local JumpBot = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 local LungeBot = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local Tank = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local VisualHitbox = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local Title = Instance.new("TextLabel")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
 local Credits = Instance.new("TextLabel")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local Page1Button = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -97,10 +106,15 @@ AimBot.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
 AimBot.Font = Enum.Font.JosefinSans
 AimBot.Text = "AimBot"
 AimBot.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimBot.TextScaled = true
 AimBot.TextSize = 15.000
+AimBot.TextWrapped = true
 
 UICorner.CornerRadius = UDim.new(0, 4)
 UICorner.Parent = AimBot
+
+UITextSizeConstraint.Parent = AimBot
+UITextSizeConstraint.MaxTextSize = 15
 
 HitboxAura.Name = "HitboxAura"
 HitboxAura.Parent = Page1Frame
@@ -112,10 +126,15 @@ HitboxAura.Size = UDim2.new(0.289660484, 0, 0.0914915055, 0)
 HitboxAura.Font = Enum.Font.JosefinSans
 HitboxAura.Text = "HitBoxAura"
 HitboxAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+HitboxAura.TextScaled = true
 HitboxAura.TextSize = 15.000
+HitboxAura.TextWrapped = true
 
 UICorner_2.CornerRadius = UDim.new(0, 4)
 UICorner_2.Parent = HitboxAura
+
+UITextSizeConstraint_2.Parent = HitboxAura
+UITextSizeConstraint_2.MaxTextSize = 15
 
 JumpBot.Name = "JumpBot"
 JumpBot.Parent = Page1Frame
@@ -127,10 +146,15 @@ JumpBot.Size = UDim2.new(0.250435621, 0, 0.137237266, 0)
 JumpBot.Font = Enum.Font.JosefinSans
 JumpBot.Text = "JumpBot"
 JumpBot.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpBot.TextScaled = true
 JumpBot.TextSize = 15.000
+JumpBot.TextWrapped = true
 
 UICorner_3.CornerRadius = UDim.new(0, 4)
 UICorner_3.Parent = JumpBot
+
+UITextSizeConstraint_3.Parent = JumpBot
+UITextSizeConstraint_3.MaxTextSize = 15
 
 LungeBot.Name = "LungeBot"
 LungeBot.Parent = Page1Frame
@@ -142,10 +166,15 @@ LungeBot.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
 LungeBot.Font = Enum.Font.JosefinSans
 LungeBot.Text = "LungeBot"
 LungeBot.TextColor3 = Color3.fromRGB(255, 255, 255)
+LungeBot.TextScaled = true
 LungeBot.TextSize = 15.000
+LungeBot.TextWrapped = true
 
 UICorner_4.CornerRadius = UDim.new(0, 4)
 UICorner_4.Parent = LungeBot
+
+UITextSizeConstraint_4.Parent = LungeBot
+UITextSizeConstraint_4.MaxTextSize = 15
 
 Tank.Name = "Tank"
 Tank.Parent = Page1Frame
@@ -157,10 +186,15 @@ Tank.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
 Tank.Font = Enum.Font.JosefinSans
 Tank.Text = "Tank"
 Tank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tank.TextScaled = true
 Tank.TextSize = 15.000
+Tank.TextWrapped = true
 
 UICorner_5.CornerRadius = UDim.new(0, 4)
 UICorner_5.Parent = Tank
+
+UITextSizeConstraint_5.Parent = Tank
+UITextSizeConstraint_5.MaxTextSize = 15
 
 VisualHitbox.Name = "VisualHitbox"
 VisualHitbox.Parent = Page1Frame
@@ -172,10 +206,15 @@ VisualHitbox.Size = UDim2.new(0.289660484, 0, 0.0762429237, 0)
 VisualHitbox.Font = Enum.Font.JosefinSans
 VisualHitbox.Text = "Visuals"
 VisualHitbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisualHitbox.TextScaled = true
 VisualHitbox.TextSize = 15.000
+VisualHitbox.TextWrapped = true
 
 UICorner_6.CornerRadius = UDim.new(0, 4)
 UICorner_6.Parent = VisualHitbox
+
+UITextSizeConstraint_6.Parent = VisualHitbox
+UITextSizeConstraint_6.MaxTextSize = 15
 
 Title.Name = "Title"
 Title.Parent = Frame
@@ -184,11 +223,16 @@ Title.BackgroundTransparency = 1.000
 Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Title.BorderSizePixel = 0
 Title.Position = UDim2.new(-0.0573771596, 0, -0.00255102944, 0)
-Title.Size = UDim2.new(0, 200, 0, 50)
+Title.Size = UDim2.new(0.355189413, 0, 0.143757537, 0)
 Title.Font = Enum.Font.JosefinSans
 Title.Text = "Mobile SF Cheat"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
 Title.TextSize = 10.000
+Title.TextWrapped = true
+
+UITextSizeConstraint_7.Parent = Title
+UITextSizeConstraint_7.MaxTextSize = 10
 
 Credits.Name = "Credits"
 Credits.Parent = Frame
@@ -197,11 +241,16 @@ Credits.BackgroundTransparency = 1.000
 Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Credits.BorderSizePixel = 0
 Credits.Position = UDim2.new(-0.0573771596, 0, 0.853509963, 0)
-Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Size = UDim2.new(0.355189413, 0, 0.143757537, 0)
 Credits.Font = Enum.Font.JosefinSans
 Credits.Text = "By aaa000798 (dc)"
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
 Credits.TextSize = 10.000
+Credits.TextWrapped = true
+
+UITextSizeConstraint_8.Parent = Credits
+UITextSizeConstraint_8.MaxTextSize = 10
 
 Page1Button.Name = "Page1Button"
 Page1Button.Parent = Frame
@@ -213,14 +262,19 @@ Page1Button.Size = UDim2.new(0.157786861, 0, 0.105610564, 0)
 Page1Button.Font = Enum.Font.JosefinSans
 Page1Button.Text = "Page 1"
 Page1Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Page1Button.TextScaled = true
 Page1Button.TextSize = 12.000
+Page1Button.TextWrapped = true
 
 UICorner_7.CornerRadius = UDim.new(0, 4)
 UICorner_7.Parent = Page1Button
 
+UITextSizeConstraint_9.Parent = Page1Button
+UITextSizeConstraint_9.MaxTextSize = 12
+
 -- Scripts:
 
-local function YGIKBZW_fake_script() -- OpenClose.Open/Close Script 
+local function RMWI_fake_script() -- OpenClose.Open/Close Script 
 	local script = Instance.new('LocalScript', OpenClose)
 
 	local Button = script.Parent
@@ -238,8 +292,8 @@ local function YGIKBZW_fake_script() -- OpenClose.Open/Close Script
 		end
 	end)
 end
-coroutine.wrap(YGIKBZW_fake_script)()
-local function GSWDP_fake_script() -- AimBot.AimbotScript 
+coroutine.wrap(RMWI_fake_script)()
+local function GNQXRUO_fake_script() -- AimBot.AimbotScript 
 	local script = Instance.new('LocalScript', AimBot)
 
 	local RunService = game:GetService("RunService")
@@ -300,8 +354,8 @@ local function GSWDP_fake_script() -- AimBot.AimbotScript
 		end
 	end)
 end
-coroutine.wrap(GSWDP_fake_script)()
-local function BCXYOF_fake_script() -- HitboxAura.HitboxAuraScript 
+coroutine.wrap(GNQXRUO_fake_script)()
+local function MRWU_fake_script() -- HitboxAura.HitboxAuraScript 
 	local script = Instance.new('LocalScript', HitboxAura)
 
 	local RunService = game:GetService("RunService")
@@ -362,8 +416,8 @@ local function BCXYOF_fake_script() -- HitboxAura.HitboxAuraScript
 		end
 	end)
 end
-coroutine.wrap(BCXYOF_fake_script)()
-local function IRMJGH_fake_script() -- JumpBot.JumpBotScript 
+coroutine.wrap(MRWU_fake_script)()
+local function XMEEH_fake_script() -- JumpBot.JumpBotScript 
 	local script = Instance.new('LocalScript', JumpBot)
 
 	local RunService = game:GetService("RunService")
@@ -409,8 +463,8 @@ local function IRMJGH_fake_script() -- JumpBot.JumpBotScript
 		end
 	end)
 end
-coroutine.wrap(IRMJGH_fake_script)()
-local function QFSX_fake_script() -- LungeBot.LungeBotScript 
+coroutine.wrap(XMEEH_fake_script)()
+local function NUCQEE_fake_script() -- LungeBot.LungeBotScript 
 	local script = Instance.new('LocalScript', LungeBot)
 
 	local RunService = game:GetService("RunService")
@@ -457,8 +511,8 @@ local function QFSX_fake_script() -- LungeBot.LungeBotScript
 		end
 	end)
 end
-coroutine.wrap(QFSX_fake_script)()
-local function SJGC_fake_script() -- Tank.TankScript 
+coroutine.wrap(NUCQEE_fake_script)()
+local function KOGQNOA_fake_script() -- Tank.TankScript 
 	local script = Instance.new('LocalScript', Tank)
 
 	local Toggle = false
@@ -517,8 +571,8 @@ local function SJGC_fake_script() -- Tank.TankScript
 		end
 	end
 end
-coroutine.wrap(SJGC_fake_script)()
-local function URCDXU_fake_script() -- VisualHitbox.VisualScript 
+coroutine.wrap(KOGQNOA_fake_script)()
+local function FEKYRON_fake_script() -- VisualHitbox.VisualScript 
 	local script = Instance.new('LocalScript', VisualHitbox)
 
 	local RunService = game:GetService("RunService")
@@ -568,8 +622,8 @@ local function URCDXU_fake_script() -- VisualHitbox.VisualScript
 		end
 	end)
 end
-coroutine.wrap(URCDXU_fake_script)()
-local function YUUI_fake_script() -- Page1Button.Page1Script 
+coroutine.wrap(FEKYRON_fake_script)()
+local function FRTIUE_fake_script() -- Page1Button.Page1Script 
 	local script = Instance.new('LocalScript', Page1Button)
 
 	local Button = script.Parent
@@ -579,8 +633,8 @@ local function YUUI_fake_script() -- Page1Button.Page1Script
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(YUUI_fake_script)()
-local function NSYNBU_fake_script() -- Frame.Draggable 
+coroutine.wrap(FRTIUE_fake_script)()
+local function KLWQOG_fake_script() -- Frame.Draggable 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -618,4 +672,4 @@ local function NSYNBU_fake_script() -- Frame.Draggable
 		end
 	end)
 end
-coroutine.wrap(NSYNBU_fake_script)()
+coroutine.wrap(KLWQOG_fake_script)()

@@ -453,7 +453,8 @@ local function UTEHSC_fake_script() -- JumpBot.JumpBotScript
 				--if v:FindFirstChild("Humanoid") and v ~= player.Character then
 					--pcall(function()
 						
-						local vHRP = v.Character.HumanoidRootPart
+						local vchar = v.Character
+						local vHRP = vchar.HumanoidRootPart
 						local vHUM = v.Character:FindFirstChild("Humanoid")
 	
 						local Radius = 20

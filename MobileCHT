@@ -461,7 +461,6 @@ local function JPRIQQ_fake_script() -- JumpBot.JumpBotScript
 						if Distance <= Radius then
 							if vChar:FindFirstChild("Humanoid"):GetState() == Enum.HumanoidStateType.Jumping or vChar:FindFirstChild("Humanoid").Jump == true then
 								Humanoid.Jump = true
-								Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 							end
 						end
 					end)

@@ -450,7 +450,7 @@ local function UTEHSC_fake_script() -- JumpBot.JumpBotScript
 			local Hum = player.Character:FindFirstChild("Humanoid")
 			
 			for  _, v in pairs(Players:GetPlayers()) do
-				if v:FindFirstChild("Humanoid") and v ~= player.Character then
+				--if v:FindFirstChild("Humanoid") and v ~= player.Character then
 					--pcall(function()
 						
 						local vHRP = v.Character:FindFirstChild("HumanoidRootPart")
@@ -465,7 +465,7 @@ local function UTEHSC_fake_script() -- JumpBot.JumpBotScript
 							end
 						end
 					--end)
-				end
+				--end
 			end
 		end
 	end)

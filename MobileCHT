@@ -450,7 +450,7 @@ local function AGMW_fake_script() -- JumpBot.JumpBotScript
 				if v.Name ~= player.Name then
 					--pcall(function()
 						
-						local vHrp = v.Character.HumanoidRootPart
+						local vHrp = v:FindFirstChild("HumanoidRootPart")
 	
 						local Radius = 20
 						local Distance = (vHrp.Position - hrp.Position).Magnitude

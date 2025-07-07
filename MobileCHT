@@ -275,7 +275,7 @@ UITextSizeConstraint_9.MaxTextSize = 12
 
 -- Scripts:
 
-local function DECZP_fake_script() -- OpenClose.Open/Close Script 
+local function JVNLAS_fake_script() -- OpenClose.Open/Close Script 
 	local script = Instance.new('LocalScript', OpenClose)
 
 	local Button = script.Parent
@@ -293,8 +293,8 @@ local function DECZP_fake_script() -- OpenClose.Open/Close Script
 		end
 	end)
 end
-coroutine.wrap(DECZP_fake_script)()
-local function QIYT_fake_script() -- AimBot.AimbotScript 
+coroutine.wrap(JVNLAS_fake_script)()
+local function TALHJ_fake_script() -- AimBot.AimbotScript 
 	local script = Instance.new('LocalScript', AimBot)
 
 	local RunService = game:GetService("RunService")
@@ -355,8 +355,8 @@ local function QIYT_fake_script() -- AimBot.AimbotScript
 		end
 	end)
 end
-coroutine.wrap(QIYT_fake_script)()
-local function EFXAZLI_fake_script() -- HitboxAura.HitboxAuraScript 
+coroutine.wrap(TALHJ_fake_script)()
+local function QUBUV_fake_script() -- HitboxAura.HitboxAuraScript 
 	local script = Instance.new('LocalScript', HitboxAura)
 
 	local RunService = game:GetService("RunService")
@@ -418,8 +418,8 @@ local function EFXAZLI_fake_script() -- HitboxAura.HitboxAuraScript
 		end
 	end)
 end
-coroutine.wrap(EFXAZLI_fake_script)()
-local function MXBNJX_fake_script() -- JumpBot.JumpBotScript 
+coroutine.wrap(QUBUV_fake_script)()
+local function UTEHSC_fake_script() -- JumpBot.JumpBotScript 
 	local script = Instance.new('LocalScript', JumpBot)
 
 	local RunService = game:GetService("RunService")
@@ -446,12 +446,11 @@ local function MXBNJX_fake_script() -- JumpBot.JumpBotScript
 			local Players = game:GetService("Players")
 			
 			local player = Players.LocalPlayer
-			local char = player.Character
-			local hrp = char:FindFirstChild("HumanoidRootPart")
-			local Hum = char:FindFirstChild("Humanoid")
+			local hrp = player.Character:FindFirstChild("HumanoidRootPart")
+			local Hum = player.Character:FindFirstChild("Humanoid")
 			
 			for  _, v in pairs(Players:GetPlayers()) do
-				if v:FindFirstChild("Humanoid") and v ~= char then
+				if v:FindFirstChild("Humanoid") and v ~= player.Character then
 					--pcall(function()
 						
 						local vHRP = v.Character:FindFirstChild("HumanoidRootPart")
@@ -461,7 +460,7 @@ local function MXBNJX_fake_script() -- JumpBot.JumpBotScript
 						local Distance = (hrp.Position - vHRP.Position).Magnitude
 	
 						if Distance <= Radius then
-							if vHUM.Jump == true then
+							if v.Character:FindFirstChild("Humanoid").Jump == true then
 								Hum.Jump = true
 							end
 						end
@@ -471,8 +470,8 @@ local function MXBNJX_fake_script() -- JumpBot.JumpBotScript
 		end
 	end)
 end
-coroutine.wrap(MXBNJX_fake_script)()
-local function IEEQDE_fake_script() -- LungeBot.LungeBotScript 
+coroutine.wrap(UTEHSC_fake_script)()
+local function FKHN_fake_script() -- LungeBot.LungeBotScript 
 	local script = Instance.new('LocalScript', LungeBot)
 
 	local RunService = game:GetService("RunService")
@@ -519,8 +518,8 @@ local function IEEQDE_fake_script() -- LungeBot.LungeBotScript
 		end
 	end)
 end
-coroutine.wrap(IEEQDE_fake_script)()
-local function UKQBZU_fake_script() -- Tank.TankScript 
+coroutine.wrap(FKHN_fake_script)()
+local function JVCLQ_fake_script() -- Tank.TankScript 
 	local script = Instance.new('LocalScript', Tank)
 
 	local Toggle = false
@@ -579,8 +578,8 @@ local function UKQBZU_fake_script() -- Tank.TankScript
 		end
 	end
 end
-coroutine.wrap(UKQBZU_fake_script)()
-local function IGDNHC_fake_script() -- VisualHitbox.VisualScript 
+coroutine.wrap(JVCLQ_fake_script)()
+local function OMPPW_fake_script() -- VisualHitbox.VisualScript 
 	local script = Instance.new('LocalScript', VisualHitbox)
 
 	local RunService = game:GetService("RunService")
@@ -630,8 +629,8 @@ local function IGDNHC_fake_script() -- VisualHitbox.VisualScript
 		end
 	end)
 end
-coroutine.wrap(IGDNHC_fake_script)()
-local function XPMBS_fake_script() -- Page1Button.Page1Script 
+coroutine.wrap(OMPPW_fake_script)()
+local function EMOYDYV_fake_script() -- Page1Button.Page1Script 
 	local script = Instance.new('LocalScript', Page1Button)
 
 	local Button = script.Parent
@@ -641,8 +640,8 @@ local function XPMBS_fake_script() -- Page1Button.Page1Script
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(XPMBS_fake_script)()
-local function VNWUED_fake_script() -- Frame.Draggable 
+coroutine.wrap(EMOYDYV_fake_script)()
+local function LPMRL_fake_script() -- Frame.Draggable 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -680,4 +679,4 @@ local function VNWUED_fake_script() -- Frame.Draggable
 		end
 	end)
 end
-coroutine.wrap(VNWUED_fake_script)()
+coroutine.wrap(LPMRL_fake_script)()

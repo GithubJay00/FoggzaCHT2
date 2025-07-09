@@ -28,13 +28,16 @@ local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local VisualHitbox = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
-local Title = Instance.new("TextLabel")
-local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
-local Credits = Instance.new("TextLabel")
-local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
-local Page1Button = Instance.new("TextButton")
+local WiggleBot = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local Title = Instance.new("TextLabel")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local Credits = Instance.new("TextLabel")
 local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local Page1Button = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -102,7 +105,7 @@ AimBot.Parent = Page1Frame
 AimBot.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 AimBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AimBot.BorderSizePixel = 0
-AimBot.Position = UDim2.new(0.0405156426, 0, 0.0636360124, 0)
+AimBot.Position = UDim2.new(0.0640505031, 0, 0.0569939502, 0)
 AimBot.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
 AimBot.Font = Enum.Font.JosefinSans
 AimBot.Text = "AimBot"
@@ -122,8 +125,8 @@ HitboxAura.Parent = Page1Frame
 HitboxAura.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 HitboxAura.BorderColor3 = Color3.fromRGB(0, 0, 0)
 HitboxAura.BorderSizePixel = 0
-HitboxAura.Position = UDim2.new(0.0299689174, 0, 0.710307002, 0)
-HitboxAura.Size = UDim2.new(0.289660484, 0, 0.0914915055, 0)
+HitboxAura.Position = UDim2.new(0.362071097, 0, 0.234999955, 0)
+HitboxAura.Size = UDim2.new(0.271643579, 0, 0.136483401, 0)
 HitboxAura.Font = Enum.Font.JosefinSans
 HitboxAura.Text = "HitBoxAura"
 HitboxAura.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -142,10 +145,10 @@ JumpBot.Parent = Page1Frame
 JumpBot.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 JumpBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
 JumpBot.BorderSizePixel = 0
-JumpBot.Position = UDim2.new(0.330176145, 0, 0.0616188385, 0)
-JumpBot.Size = UDim2.new(0.250435621, 0, 0.137237266, 0)
+JumpBot.Position = UDim2.new(0.0634486303, 0, 0.236693501, 0)
+JumpBot.Size = UDim2.new(0.272158742, 0, 0.137237266, 0)
 JumpBot.Font = Enum.Font.JosefinSans
-JumpBot.Text = "JumpBot"
+JumpBot.Text = "JumpBot(Broken)"
 JumpBot.TextColor3 = Color3.fromRGB(255, 255, 255)
 JumpBot.TextScaled = true
 JumpBot.TextSize = 15.000
@@ -162,7 +165,7 @@ LungeBot.Parent = Page1Frame
 LungeBot.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 LungeBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
 LungeBot.BorderSizePixel = 0
-LungeBot.Position = UDim2.new(0.595698237, 0, 0.0627463832, 0)
+LungeBot.Position = UDim2.new(0.0622428097, 0, 0.409387052, 0)
 LungeBot.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
 LungeBot.Font = Enum.Font.JosefinSans
 LungeBot.Text = "LungeBot"
@@ -182,7 +185,7 @@ Tank.Parent = Page1Frame
 Tank.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 Tank.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tank.BorderSizePixel = 0
-Tank.Position = UDim2.new(0.0405156426, 0, 0.234645814, 0)
+Tank.Position = UDim2.new(0.359542936, 0, 0.0586312562, 0)
 Tank.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
 Tank.Font = Enum.Font.JosefinSans
 Tank.Text = "Tank"
@@ -202,10 +205,10 @@ VisualHitbox.Parent = Page1Frame
 VisualHitbox.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 VisualHitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 VisualHitbox.BorderSizePixel = 0
-VisualHitbox.Position = UDim2.new(0.0299689174, 0, 0.827520072, 0)
-VisualHitbox.Size = UDim2.new(0.289660484, 0, 0.0762429237, 0)
+VisualHitbox.Position = UDim2.new(0.362071097, 0, 0.407693505, 0)
+VisualHitbox.Size = UDim2.new(0.271643579, 0, 0.139804453, 0)
 VisualHitbox.Font = Enum.Font.JosefinSans
-VisualHitbox.Text = "Visuals"
+VisualHitbox.Text = "HitboxVisuals"
 VisualHitbox.TextColor3 = Color3.fromRGB(255, 255, 255)
 VisualHitbox.TextScaled = true
 VisualHitbox.TextSize = 15.000
@@ -216,6 +219,26 @@ UICorner_6.Parent = VisualHitbox
 
 UITextSizeConstraint_6.Parent = VisualHitbox
 UITextSizeConstraint_6.MaxTextSize = 15
+
+WiggleBot.Name = "WiggleBot"
+WiggleBot.Parent = Page1Frame
+WiggleBot.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+WiggleBot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WiggleBot.BorderSizePixel = 0
+WiggleBot.Position = UDim2.new(0.0622428097, 0, 0.582080603, 0)
+WiggleBot.Size = UDim2.new(0.271556705, 0, 0.137237266, 0)
+WiggleBot.Font = Enum.Font.JosefinSans
+WiggleBot.Text = "WiggleBot"
+WiggleBot.TextColor3 = Color3.fromRGB(255, 255, 255)
+WiggleBot.TextScaled = true
+WiggleBot.TextSize = 15.000
+WiggleBot.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = WiggleBot
+
+UITextSizeConstraint_7.Parent = WiggleBot
+UITextSizeConstraint_7.MaxTextSize = 15
 
 Title.Name = "Title"
 Title.Parent = Frame
@@ -232,8 +255,8 @@ Title.TextScaled = true
 Title.TextSize = 10.000
 Title.TextWrapped = true
 
-UITextSizeConstraint_7.Parent = Title
-UITextSizeConstraint_7.MaxTextSize = 5
+UITextSizeConstraint_8.Parent = Title
+UITextSizeConstraint_8.MaxTextSize = 5
 
 Credits.Name = "Credits"
 Credits.Parent = Frame
@@ -250,8 +273,8 @@ Credits.TextScaled = true
 Credits.TextSize = 10.000
 Credits.TextWrapped = true
 
-UITextSizeConstraint_8.Parent = Credits
-UITextSizeConstraint_8.MaxTextSize = 5
+UITextSizeConstraint_9.Parent = Credits
+UITextSizeConstraint_9.MaxTextSize = 5
 
 Page1Button.Name = "Page1Button"
 Page1Button.Parent = Frame
@@ -267,34 +290,65 @@ Page1Button.TextScaled = true
 Page1Button.TextSize = 12.000
 Page1Button.TextWrapped = true
 
-UICorner_7.CornerRadius = UDim.new(0, 4)
-UICorner_7.Parent = Page1Button
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = Page1Button
 
-UITextSizeConstraint_9.Parent = Page1Button
-UITextSizeConstraint_9.MaxTextSize = 12
+UITextSizeConstraint_10.Parent = Page1Button
+UITextSizeConstraint_10.MaxTextSize = 12
 
 -- Scripts:
 
-local function JWDL_fake_script() -- OpenClose.Open/Close Script 
+local function QKQHMKD_fake_script() -- OpenClose.Open/Close Script 
 	local script = Instance.new('LocalScript', OpenClose)
 
+	local TweenService = game:GetService("TweenService")
 	local Button = script.Parent
 	local MainFrame = script.Parent.Parent.Frame
 	local isOpened = false
+	local TweenSpeed = 0.5
+	
+	function open()
+		MainFrame.Visible = true
+		local OpenTween = TweenService:Create(MainFrame, TweenInfo.new(TweenSpeed), {Size = UDim2.new(0.353,0 , 0.425,0), Transparency = 0})
+		OpenTween:Play()
+		
+		OpenTween.Completed:Connect(function()
+			for _, v in pairs(MainFrame:GetChildren()) do
+	
+			end
+		end)
+	end
+	
+	
+	function close()
+		for _, v in pairs(MainFrame:GetChildren()) do
+			
+		end
+		
+		local CloseTween = TweenService:Create(MainFrame, TweenInfo.new(TweenSpeed), {Size = UDim2.new(0.353, 0,-0, 0), Transparency = 1})
+		CloseTween:Play()
+		CloseTween.Completed:Connect(function()
+			MainFrame.Visible = false
+		end)
+	end
+	
 	
 	Button.Activated:Connect(function()
 		isOpened = not isOpened
 		
 		if isOpened then
-			MainFrame.Visible = true
-			
+	-- Opened 
+			open()
+			--close()
 		else
-			MainFrame.Visible = false
+	-- Closed
+			close()
+			--open()
 		end
 	end)
 end
-coroutine.wrap(JWDL_fake_script)()
-local function XXXXAE_fake_script() -- AimBot.AimbotScript 
+coroutine.wrap(QKQHMKD_fake_script)()
+local function QPFAI_fake_script() -- AimBot.AimbotScript 
 	local script = Instance.new('LocalScript', AimBot)
 
 	local RunService = game:GetService("RunService")
@@ -355,8 +409,8 @@ local function XXXXAE_fake_script() -- AimBot.AimbotScript
 		end
 	end)
 end
-coroutine.wrap(XXXXAE_fake_script)()
-local function CFDB_fake_script() -- HitboxAura.HitboxAuraScript 
+coroutine.wrap(QPFAI_fake_script)()
+local function ETITCS_fake_script() -- HitboxAura.HitboxAuraScript 
 	local script = Instance.new('LocalScript', HitboxAura)
 
 	local RunService = game:GetService("RunService")
@@ -418,8 +472,8 @@ local function CFDB_fake_script() -- HitboxAura.HitboxAuraScript
 		end
 	end)
 end
-coroutine.wrap(CFDB_fake_script)()
-local function WICRH_fake_script() -- JumpBot.JumpBotScript 
+coroutine.wrap(ETITCS_fake_script)()
+local function CZGJP_fake_script() -- JumpBot.JumpBotScript 
 	local script = Instance.new('LocalScript', JumpBot)
 
 	local RunService = game:GetService("RunService")
@@ -468,8 +522,8 @@ local function WICRH_fake_script() -- JumpBot.JumpBotScript
 		end
 	end)
 end
-coroutine.wrap(WICRH_fake_script)()
-local function CIMFHGO_fake_script() -- LungeBot.LungeBotScript 
+coroutine.wrap(CZGJP_fake_script)()
+local function UKOTSC_fake_script() -- LungeBot.LungeBotScript 
 	local script = Instance.new('LocalScript', LungeBot)
 
 	local RunService = game:GetService("RunService")
@@ -516,8 +570,8 @@ local function CIMFHGO_fake_script() -- LungeBot.LungeBotScript
 		end
 	end)
 end
-coroutine.wrap(CIMFHGO_fake_script)()
-local function XCERQLO_fake_script() -- Tank.TankScript 
+coroutine.wrap(UKOTSC_fake_script)()
+local function HPQCFW_fake_script() -- Tank.TankScript 
 	local script = Instance.new('LocalScript', Tank)
 
 	local Toggle = false
@@ -576,8 +630,8 @@ local function XCERQLO_fake_script() -- Tank.TankScript
 		end
 	end
 end
-coroutine.wrap(XCERQLO_fake_script)()
-local function SJLLV_fake_script() -- VisualHitbox.VisualScript 
+coroutine.wrap(HPQCFW_fake_script)()
+local function EGLK_fake_script() -- VisualHitbox.VisualScript 
 	local script = Instance.new('LocalScript', VisualHitbox)
 
 	local RunService = game:GetService("RunService")
@@ -627,8 +681,35 @@ local function SJLLV_fake_script() -- VisualHitbox.VisualScript
 		end
 	end)
 end
-coroutine.wrap(SJLLV_fake_script)()
-local function NVPBB_fake_script() -- Page1Button.Page1Script 
+coroutine.wrap(EGLK_fake_script)()
+local function CBHXZ_fake_script() -- WiggleBot.WiggleBotScript 
+	local script = Instance.new('LocalScript', WiggleBot)
+
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local StarterGui = game:GetService("StarterGui")
+	local player = Players.LocalPlayer
+	local WiggleBotButton = script.Parent
+	
+	local Toggled = false
+	
+	local function Notify(Info)
+		StarterGui:SetCore("SendNotification", {Title = "WiggleBot", Text = Info})
+	end
+	
+	WiggleBotButton.Activated:Connect(function()
+		Toggled = not Toggled
+		Notify(tostring(Toggled))
+	end)
+	
+	RunService.Stepped:Connect(function()
+		if Toggled then
+			
+		end
+	end)
+end
+coroutine.wrap(CBHXZ_fake_script)()
+local function CWOTN_fake_script() -- Page1Button.Page1Script 
 	local script = Instance.new('LocalScript', Page1Button)
 
 	local Button = script.Parent
@@ -638,8 +719,8 @@ local function NVPBB_fake_script() -- Page1Button.Page1Script
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(NVPBB_fake_script)()
-local function DJCR_fake_script() -- Frame.Draggable 
+coroutine.wrap(CWOTN_fake_script)()
+local function GCGUKFQ_fake_script() -- Frame.Draggable 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -677,4 +758,4 @@ local function DJCR_fake_script() -- Frame.Draggable
 		end
 	end)
 end
-coroutine.wrap(DJCR_fake_script)()
+coroutine.wrap(GCGUKFQ_fake_script)()
